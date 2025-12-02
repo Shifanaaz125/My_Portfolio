@@ -4,26 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shifa Naaz — Data Analyst Portfolio</title>
-
-  <!-- Fonts & icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
   <meta name="description" content="Shifa Naaz — Business Intelligence & Data Analyst. Power BI, SQL, Python, Tableau. Portfolio and projects." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#about">Shifa <span class="brand-accent">Naaz</span></a>
+  <header class="header">
+    <div class="container header-row">
+      <a class="logo" href="#about"><span class="logo-name">Shifa</span><span class="logo-surname">Naaz</span></a>
 
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" role="navigation">
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -33,233 +24,224 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
 
   <main>
-    <!-- About -->
-    <section id="about" class="about-section">
-      <div class="container about-grid">
-        <div class="about-text">
-          <h1>Hi, I'm <span class="highlight">Shifa Naaz</span>.</h1>
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero container">
+      <div class="hero-left">
+        <h1 class="hero-title">Hi, I'm <span class="accent">Shifa Naaz</span></h1>
+        <p class="hero-sub">
+          Business Intelligence & Data Analyst — transforming data into clear business outcomes.
+        </p>
+
+        <div class="hero-text">
           <p>
-            Dynamic and detail-oriented <strong>Business Intelligence Analyst</strong> with over 5 years of combined experience in customer service and data analytics across the <strong>retail</strong>, <strong>logistics</strong>, and <strong>e-commerce</strong> sectors. Adept at transforming business challenges into actionable insights using <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>, <strong>Tableau</strong>, and <strong>Excel</strong>.
+            Dynamic and detail-oriented <strong>Business Intelligence Analyst</strong> with 5+ years of combined experience in customer service and data analytics across <strong>retail</strong>, <strong>logistics</strong>, and <strong>e-commerce</strong>. Skilled in <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>, <strong>Tableau</strong>, and <strong>Excel</strong>.
           </p>
-
           <p>
-            My foundation in customer service has sharpened my communication, problem-solving, and stakeholder collaboration skills — enabling me to translate user needs into impactful data solutions.
+            Proven record of optimizing operations (up to <strong>20%</strong> improvement) and accelerating decision-making by <strong>30%</strong> via automated pipelines and interactive dashboards.
           </p>
+        </div>
 
-          <p>
-            Proven track record of optimizing operations (up to <strong>20%</strong> improvement) and speeding decision-making by <strong>30%</strong> through automated data pipelines and interactive dashboards.
-          </p>
-
-          <!--<div class="btn-row">
-            <a class="btn" href="#skills">View Skills</a>
-            <a class="btn btn-outline" href="#projects">View Projects</a>
-            <a class="btn" href="#articles">Article</a>
-          </div>
-        </div> 
-
-        <div class="about-photo" aria-hidden="false">
-           keep your avatar path /images/Avtar_image.jpg 
-          <img src="images/Avtar_image.jpg" alt="Shifa Naaz — avatar" />
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn outline" href="#skills">View Skills</a>
+          <a class="btn ghost" href="https://medium.com/@sfnz2018/how-mandatory-is-domain-knowledge-for-a-data-analyst-0d3c9c40c1e2" target="_blank" rel="noreferrer">Read Article</a>
         </div>
       </div>
-    </section> -->
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3><i class="fa-solid fa-code"></i> Core Technical Skills</h3>
-            <ul>
-              <li>Python (data analysis, ETL, automation)</li>
-              <li>SQL / MySQL (queries & manipulation)</li>
-              <li>Power BI & Tableau (dashboards)</li>
-              <li>Excel & Power Query (data cleaning)</li>
-              <li>Statistics & Probability</li>
-              <li>Machine Learning basics</li>
-            </ul>
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <img src="images/Avtar_image.jpg" alt="Shifa Naaz" class="avatar">
+        </div>
+        <div class="quick-stats">
+          <div class="stat">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
-
-          <div class="skill-card">
-            <h3><i class="fa-solid fa-database"></i> Data & Analytics</h3>
-            <ul>
-              <li>Data Wrangling & Modeling</li>
-              <li>ETL & Pipelines</li>
-              <li>Visualization & Storytelling</li>
-              <li>BI Tools & KPIs</li>
-              <li>Reporting & Dashboards</li>
-            </ul>
+          <div class="stat">
+            <div class="stat-number">30%</div>
+            <div class="stat-label">Decision Speed</div>
           </div>
-
-          <div class="skill-card">
-            <h3><i class="fa-solid fa-chart-line"></i> Business & Analytical</h3>
-            <ul>
-              <li>Process Improvement</li>
-              <li>Demand Forecasting</li>
-              <li>Project & Stakeholder Management</li>
-              <li>Communication & Presentations</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3><i class="fa-solid fa-users"></i> Professional Skills</h3>
-            <ul>
-              <li>Problem Solving</li>
-              <li>Team Collaboration</li>
-              <li>Time Management</li>
-              <li>Adaptability</li>
-            </ul>
+          <div class="stat">
+            <div class="stat-number">20%</div>
+            <div class="stat-label">Ops Improvement</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects-section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <div class="project-meta">Power BI</div>
-            <h3>Sales Dashboard</h3>
-            <p>Interactive Power BI dashboard to visualize revenue trends and product performance. Improved stakeholder decision speed by ~25%.</p>
-            <div class="project-links">
-              <a class="link" href="https://github.com/Shifanaaz125/Power-BI" target="_blank" rel="noreferrer">View on GitHub</a>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card">
-            <div class="project-meta">SQL & Python</div>
-            <h3>B2B Logistics Analysis</h3>
-            <p>Used SQL and Power BI to analyze shipment patterns and reduce cancellations by identifying root causes.</p>
-            <div class="project-links">
-              <a class="link" href="https://github.com/Shifanaaz125/B2B-Logistics" target="_blank" rel="noreferrer">Case Study</a>
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card">
-            <div class="project-meta">Python</div>
-            <h3>LinkedIn Engagement Insights</h3>
-            <p>Analyzed personal LinkedIn posts to identify top-performing content themes using Python (pandas, matplotlib).</p>
-            <div class="project-links">
-              <a class="link" href="https://github.com/Shifanaaz125/My_Linkedin_Posts_Analysis" target="_blank" rel="noreferrer">Explore</a>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="project-card">
-            <div class="project-meta">Excel</div>
-            <h3>Operational Reporting</h3>
-            <p>Automated monthly operational KPIs using Excel + Power Query, saving >10 hours/month in reporting.</p>
-            <div class="project-links">
-              <a class="link" href="#" target="_blank" rel="noreferrer">More</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Articles -->
-    <section id="articles" class="section">
-      <div class="container">
-        <h2 class="section-title">Articles</h2>
-        <div class="article-card">
-          <img src="Article.webp" alt="Article image" class="article-image" />
-          <div class="article-content">
-            <h3>How Mandatory Is Domain Knowledge for a Data Analyst?</h3>
-            <p>A short read on why domain knowledge plays a vital role for data analysts in making insights more impactful and business-driven.</p>
-            <a class="btn" href="https://medium.com/@sfnz2018/how-mandatory-is-domain-knowledge-for-a-data-analyst-0d3c9c40c1e2" target="_blank" rel="noreferrer">Read full article</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendations -->
-    <section id="recommendations" class="section">
-      <div class="container">
-        <h2 class="section-title">Recommendations</h2>
-
-        <div class="recommendation-carousel" aria-label="Recommendations">
-          <blockquote class="recommendation-card">
-            <h4>Varinida Gayas</h4>
-            <p class="role">Designing IT Infrastructure with Microsoft Technologies — <time>Oct 30, 2023</time></p>
-            <p>Having interacted with Shifa in various data science forums ... I'm consistently impressed by her depth of knowledge and passion for the field.</p>
-          </blockquote>
-
-          <blockquote class="recommendation-card">
-            <h4>Marina Elias</h4>
-            <p class="role">Experienced Operations Leader — <time>Oct 24, 2023</time></p>
-            <p>During the duration for more than one year, I was manager of Shifa. She was instrumental in making sure things went smoothly in the team.</p>
-          </blockquote>
-
-          <blockquote class="recommendation-card">
-            <h4>Haseen Saifi</h4>
-            <p class="role">Analyst at BT — <time>Oct 23, 2023</time></p>
-            <p>Shifa was my colleague at Webhelp, and I can wholeheartedly affirm her outstanding attributes.</p>
-          </blockquote>
-
-          <blockquote class="recommendation-card">
-            <h4>Rajneesh Kumar</h4>
-            <p class="role">Project Delivery Manager — <time>Oct 20, 2023</time></p>
-            <p>Shifa is a standout professional. Her analytical skills, dedication, and ability to handle multiple tasks make her an asset to any team.</p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <h2 class="section-title">Contact</h2>
-          <p>If you'd like to work together or see more of my work, feel free to reach out.</p>
-
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:your.email@example.com">shifanaaz2023@yahoo.com</a></li>
-            <li><strong>Location:</strong> Dubai, UAE</li>
-            <li><strong>LinkedIn:</strong> <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shifanaaz125">/in/shifanaaz125</a></li>
-            <li><strong>GitHub:</strong> <a target="_blank" rel="noreferrer" href="https://github.com/Shifanaaz125">Shifanaaz125</a></li>
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="cards-grid skills-grid">
+        <div class="card">
+          <h3 class="card-title"><i class="fa-solid fa-code"></i> Core Technical</h3>
+          <ul>
+            <li>Python — pandas, numpy, automation</li>
+            <li>SQL / MySQL — complex queries & optimization</li>
+            <li>Power BI & Tableau — dashboards & storytelling</li>
+            <li>Excel & Power Query — transformation & reporting</li>
+            <li>Statistics & ML basics</li>
           </ul>
         </div>
 
-        <form class="contact-form" action="#" onsubmit="return handleContactSubmit(event)" aria-label="Contact form">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required />
-          </label>
+        <div class="card">
+          <h3 class="card-title"><i class="fa-solid fa-database"></i> Data & BI</h3>
+          <ul>
+            <li>ETL design & data pipelines</li>
+            <li>Data modeling & warehousing</li>
+            <li>KPI design & reporting</li>
+            <li>Visualization best practices</li>
+          </ul>
+        </div>
 
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required />
-          </label>
+        <div class="card">
+          <h3 class="card-title"><i class="fa-solid fa-business-time"></i> Business</h3>
+          <ul>
+            <li>Process improvement & strategy</li>
+            <li>Forecasting & demand analysis</li>
+            <li>Stakeholder & project management</li>
+          </ul>
+        </div>
 
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-
-          <div class="form-row">
-            <button type="submit" class="btn">Send Message</button>
-            <small class="hint">This form is static — configure a server or service (Formspree/Netlify Forms) to receive messages.</small>
-          </div>
-        </form>
+        <div class="card">
+          <h3 class="card-title"><i class="fa-solid fa-users"></i> Professional</h3>
+          <ul>
+            <li>Communication & presentation</li>
+            <li>Team collaboration</li>
+            <li>Problem solving & adaptability</li>
+          </ul>
+        </div>
       </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-head"><span class="pill">Power BI</span></div>
+          <h3>Sales Dashboard</h3>
+          <p>Interactive dashboard visualizing revenue trends and product performance — improved stakeholder decision speed by ~25%.</p>
+          <div class="project-links">
+            <a href="https://github.com/Shifanaaz125/Power-BI" target="_blank" rel="noreferrer" class="link">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="pill">SQL / Python</span></div>
+          <h3>B2B Logistics Analysis</h3>
+          <p>Used SQL and Power BI to analyze shipment patterns and reduce cancellations through actionable insights.</p>
+          <div class="project-links"><a href="https://github.com/Shifanaaz125/B2B-Logistics" class="link" target="_blank" rel="noreferrer">Case Study</a></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="pill">Python</span></div>
+          <h3>LinkedIn Engagement Insights</h3>
+          <p>Analyzed LinkedIn engagement using Python to identify top-performing content themes.</p>
+          <div class="project-links"><a href="https://github.com/Shifanaaz125/My_Linkedin_Posts_Analysis" class="link" target="_blank" rel="noreferrer">Explore</a></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="pill">Excel</span></div>
+          <h3>Operational Reporting</h3>
+          <p>Automated monthly KPIs using Excel & Power Query — saved over 10 hours/month.</p>
+          <div class="project-links"><a href="#" class="link">More</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ARTICLE -->
+    <section id="articles" class="section container">
+      <h2 class="section-title">Articles</h2>
+      <div class="article">
+        <img src="Article.webp" alt="Article cover" class="article-thumb">
+        <div class="article-body">
+          <h3>How Mandatory Is Domain Knowledge for a Data Analyst?</h3>
+          <p>A short read on why domain knowledge is essential for turning data into business value.</p>
+          <a class="btn small primary" href="https://medium.com/@sfnz2018/how-mandatory-is-domain-knowledge-for-a-data-analyst-0d3c9c40c1e2" target="_blank" rel="noreferrer">Read full article</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section id="recommendations" class="section container">
+      <h2 class="section-title">Recommendations</h2>
+      <div class="carousel">
+        <div class="rec-card">
+          <h4>Varinida Gayas</h4>
+          <p class="rec-role">Designing IT Infrastructure with Microsoft Technologies — <time>Oct 30, 2023</time></p>
+          <p>Having interacted with Shifa in various data science forums and discussions, I'm consistently impressed by her depth of knowledge and passion for the field.</p>
+        </div>
+
+        <div class="rec-card">
+          <h4>Marina Elias</h4>
+          <p class="rec-role">Experienced Operations Leader — <time>Oct 24, 2023</time></p>
+          <p>During the duration for more than one year, I was manager of Shifa. She was instrumental in making sure things went smoothly in the team.</p>
+        </div>
+
+        <div class="rec-card">
+          <h4>Haseen Saifi</h4>
+          <p class="rec-role">Analyst at BT — <time>Oct 23, 2023</time></p>
+          <p>Shifa was my colleague at Webhelp, and I can wholeheartedly affirm her outstanding attributes.</p>
+        </div>
+
+        <div class="rec-card">
+          <h4>Rajneesh Kumar</h4>
+          <p class="rec-role">Project Delivery Manager — <time>Oct 20, 2023</time></p>
+          <p>Shifa is a standout professional. Her analytical skills, dedication, and ability to handle multiple tasks make her an asset to any team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <div class="contact-left">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to work together or see more of my work, reach out:</p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><strong>Location:</strong> Dubai, UAE</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shifanaaz125" target="_blank" rel="noreferrer">/in/shifanaaz125</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Shifanaaz125" target="_blank" rel="noreferrer">Shifanaaz125</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-right" action="#" onsubmit="return handleContactSubmit(event)" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send message</button>
+          <small class="muted">Form is static — set up Formspree / Netlify Forms to receive messages.</small>
+        </div>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Shifa Naaz — Business Intelligence & Data Analyst</p>
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Shifa Naaz — Data Analyst</div>
       <div class="socials">
         <a href="https://github.com/Shifanaaz125" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/shifanaaz125" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
