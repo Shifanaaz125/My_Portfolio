@@ -85,6 +85,8 @@ body{background:var(--bg);color:var(--muted);-webkit-font-smoothing:antialiased;
 .pill{display:inline-block;background:var(--soft);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;font-size:0.85rem}
 .project-links{margin-top:12px}
 .link{text-decoration:none;color:var(--accent);font-weight:700}
+.project ul{margin:10px 0 0;padding-left:18px;color:#444}
+.project ul li{margin-bottom:6px}
 
 /* ARTICLE */
 .article{display:flex;gap:18px;align-items:center;background:var(--panel);padding:18px;border-radius:12px;box-shadow:0 8px 22px rgba(20,30,40,0.04)}
